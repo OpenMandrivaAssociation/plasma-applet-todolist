@@ -1,7 +1,6 @@
 %define name	plasma-applet-todolist
 %define version	0.3
-%define release	%mkrel 1
-%define section	Graphical desktop/KDE
+%define release	%mkrel 2
 %define Summary	Todo List plasmoid using akonadi
 
 Summary:	%Summary
@@ -9,8 +8,9 @@ Name:		%name
 Version:	%version
 Release:	%release
 Source0:	http://www.kde-look.org/CONTENT/content-files/90706-todo-plasmoid-0.3.tar.bz
+Patch0:		plasma-applet-todolist-categories.patch
 License:	GPLv2
-Group:		%section
+Group:		Graphical desktop/KDE
 URL:		http://www.kde-look.org/content/show.php/todo+list?content=90706
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	kdebase4-devel
@@ -31,7 +31,7 @@ Plasmoid that shows KOrganizer 'todo' list using akonadi.
 
 %prep
 %setup -q -n todo-plasmoid-%{version}
-
+%patch0 -p0
 %build
 %cmake_kde4
 %make
