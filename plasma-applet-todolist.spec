@@ -17,6 +17,7 @@ BuildRequires:	kdebase4-devel
 BuildRequires:	akonadi-devel
 BuildRequires:	kdepimlibs4-devel
 Requires:	kdepim4-runtime
+Provides:   plasma-applet
 
 %description
 Plasmoid that shows KOrganizer 'todo' list using akonadi.
