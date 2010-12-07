@@ -1,6 +1,6 @@
 %define name	plasma-applet-todolist
 %define version	0.4
-%define release	%mkrel 1
+%define release	%mkrel 2
 %define Summary	Todo List plasmoid using akonadi
 
 Summary:	%Summary
