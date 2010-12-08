@@ -16,6 +16,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	kdebase4-devel
 BuildRequires:	akonadi-devel
 BuildRequires:	kdepimlibs4-devel
+BuildRequires:  boost-devel
 Requires:	kdepim4-runtime
 Provides:   plasma-applet
 
@@ -30,9 +31,12 @@ Plasmoid that shows KOrganizer 'todo' list using akonadi.
 %{_kde_services}/plasma-engine-todo.desktop
 %{_kde_services}/todoapplet-default.desktop
 
+#-----------------------------------------------------------------------
+
 %prep
 %setup -q -n todo_plasmoid
 %patch0 -p0
+
 %build
 %cmake_kde4
 %make
