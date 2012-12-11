@@ -47,3 +47,23 @@ Plasmoid that shows KOrganizer 'todo' list using akonadi.
 
 %clean
 %__rm -rf %{buildroot}
+
+
+%changelog
+* Wed Dec 08 2010 John Balcaen <mikala@mandriva.org> 0.4-2mdv2011.0
++ Revision: 616248
+- Fix buildrequires
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - the mass rebuild of 2010.1 packages
+
+* Sat Dec 12 2009 John Balcaen <mikala@mandriva.org> 0.4-1mdv2010.1
++ Revision: 477857
+- Update to 0.4
+- rename and rediff patch0
+- Fix plasmoid category
+
+* Sun Aug 30 2009 John Balcaen <mikala@mandriva.org> 0.3-1mdv2010.0
++ Revision: 422424
+- import plasma-applet-todolist
+
