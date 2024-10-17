@@ -11,7 +11,7 @@ Source0:	http://www.kde-look.org/CONTENT/content-files/90706-todo_plasmoid-0.4.t
 Patch0:		plasma-applet-todolist-0.4-mdv-fix-category.patch
 License:	GPLv2
 Group:		Graphical desktop/KDE
-URL:		http://www.kde-look.org/content/show.php/todo+list?content=90706
+URL:		https://www.kde-look.org/content/show.php/todo+list?content=90706
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	kdebase4-devel
 BuildRequires:	akonadi-devel
